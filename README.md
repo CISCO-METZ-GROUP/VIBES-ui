@@ -1,7 +1,7 @@
 # VIBES-UI
 
-This is the GUI for the VIBES project. Make sure that you have VIBES running before initiating the GUI.
-Change the IP addresses in src/app/app-config.ts to point the GUI to the backend.
+This is the GUI for the VIBES project. 
+
 
 ## Author
 
@@ -20,7 +20,8 @@ Lubomir Balogh
 
 ## Prerequisities
 
-- Both the CLI and generated project have dependencies that require Node.js. Install npm and run `npm install` before running the server.
+- Make sure that you have VIBES docker container running before initiating the GUI. Change the IP addresses in `src/app/app-config.ts` to point the GUI to your VIBES backend.
+- Both the CLI and generated project have dependencies that require Node.js. Install npm and run `npm install` before running the GUI.
 - Google Chrome - running with [disabled web security](https://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome).
     ##### -Command in OSX:
     open -n -a Google\ Chrome --args --disable-web-security --user-data-dir=/tmp/chrome
