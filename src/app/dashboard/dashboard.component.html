@@ -1,0 +1,38 @@
+<div class="content" fxFlex fxLayout="row" fxLayoutAlign="space-around center">
+  <button routerLink="/tier1" class="dash-button">
+    <svg class="button-icon" width="70" height="70">
+      <g>
+        <circle cx="35" cy="35" r="35" fill="#5AB95C" />
+        <text x="55%" y="70%" text-anchor="middle" fill="#ffffff" class="t1-text">T1</text>
+      </g>
+    </svg>
+    <span class="button-text">Tier 1</span>
+  </button>
+  <button routerLink="/blockchain" class="dash-button">
+    <svg class="button-icon" width="70" height="70">
+      <g>
+        <circle cx="35" cy="35" r="35" fill="#D9544E" />
+        <image href="/assets/images/icons/link-line.svg" width="60" height="60" x="5" y="5"></image>
+      </g>
+    </svg>
+    <span class="button-text">Blockchain</span>
+  </button>
+  <button routerLink="/oem" class="dash-button">
+    <svg class="button-icon" width="70" height="70">
+      <g>
+        <circle cx="35" cy="35" r="35" fill="#E9AB49" />
+        <image href="/assets/images/icons/administrator-line.svg" width="50" height="50" x="12" y="10"></image>
+      </g>
+    </svg>
+    <span class="button-text">OEM</span>
+  </button>
+</div>
+<clr-modal [(clrModalOpen)]="isSplashScreenOpened" [clrModalClosable]="true" (clrModalOpenChange)="onModalToggle($event)" class="vibes-modal">
+    <div class="modal-body">
+      <img class="logo-image" src="/assets/images/cisco.svg">
+      <h3 class="vibes-header">VIBES</h3>
+      <button class="splashScreenButton" (click)="deploySmartContract()">Deploy Smart Contract</button><br>
+    </div>
+    <div class="modal-footer">
+    </div>
+</clr-modal>

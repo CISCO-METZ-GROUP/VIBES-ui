@@ -1,0 +1,47 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title fxLayout="row" fxLayoutAlign="space-between center" class="block-title">
+      <h3>Block #{{item.height}}</h3>
+      <span><a mat-raised-button (click)="showDetail()" class="primary-button">Show Detail</a></span>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content fxLayout="column">
+
+    <div fxLayout="row" fxLayoutAlign="space-between none">
+      <mat-form-field fxFlex="35%">
+        <input matInput value="{{item.time}}" placeholder="Time" disabled>
+      </mat-form-field>
+      <mat-form-field fxFlex="15%">
+        <input matInput value="{{item.nonce}}" placeholder="Nonce" disabled>
+      </mat-form-field>
+      <mat-form-field fxFlex="15%">
+        <input matInput value="{{item.size}}" placeholder="Size" disabled>
+      </mat-form-field>
+      <mat-form-field fxFlex="20%">
+        <input matInput value="{{item.tx.length}}" placeholder="Transactions" disabled>
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-between none">
+      <mat-form-field fxFlex="43%">
+        <input matInput value="{{item.gasUsed}}" placeholder="Gas Used" disabled>
+      </mat-form-field>
+      <mat-form-field fxFlex="43%">
+        <input matInput value="{{item.gasLimit}}" placeholder="Gas Limit" disabled>
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-between none">
+      <mat-form-field fxFlex="100%">
+        <input matInput value="{{item.miner}}" placeholder="Miner" disabled>
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="row">
+      <mat-form-field fxFlex="100%">
+        <input matInput value="{{item.hash.substring(0, 15)}}" placeholder="Current Block Hash" disabled>
+      </mat-form-field>
+    </div>
+
+  </mat-card-content>
+</mat-card>

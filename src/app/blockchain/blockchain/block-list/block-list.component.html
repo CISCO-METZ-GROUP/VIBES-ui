@@ -1,0 +1,28 @@
+<mat-card *ngIf="!loading">
+  <div class="header-controls">
+    <a routerLink="/dashboard"><img src="/assets/images/icons/window-close-line.svg" width="40" height="40"></a>
+  </div>
+  <div *ngIf="displayData" class="bc-tile-wrapper">
+    <!-- <div fxFlex="5" fxLayout="row" fxLayoutAlign="space-around center"> -->
+      <button mat-raised-button (click)="previousItem()" [disabled]="position === 0" class="primary-button bc-control left">
+        <img src="/assets/images/icons/caret-line-left.svg" alt="left">
+      </button>
+    <!-- </div> -->
+    <div class="block-tiles text-center">
+      <div *ngFor="let blockItem of displayData" class="block-tile">
+        <app-block-list-item [item]="blockItem"></app-block-list-item>
+      </div>
+      <div *ngIf="!loading && !displayData.length">
+        No Data Available
+      </div>
+    </div>
+    <!-- <div fxFlex="5" fxLayout="row" fxLayoutAlign="space-around center"> -->
+      <button mat-raised-button (click)="nextItem()" class="primary-button bc-control right">
+        <img src="/assets/images/icons/caret-line-right.svg" alt="right">
+      </button>
+    <!-- </div> -->
+  </div>
+</mat-card>
+<mat-card *ngIf="loading">
+  <mat-spinner></mat-spinner>
+</mat-card>
