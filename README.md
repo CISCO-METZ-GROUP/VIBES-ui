@@ -13,9 +13,9 @@ Lubomir Balogh
 ![Screen Shot](https://github.com/CISCO-METZ-GROUP/VIBES-ui/blob/master/screenshots/OEM%20Uploaded%20New%20Design.png)
 + Tier1 receiving new Vnet design
 ![Screen Shot](https://github.com/CISCO-METZ-GROUP/VIBES-ui/blob/master/screenshots/T1%20Received%20New%20Design.png)
-+ Tier1 performing offline validation
++ Tier1 performing offline validation and sending verdict to OEM
 ![Screen Shot](https://github.com/CISCO-METZ-GROUP/VIBES-ui/blob/master/screenshots/T1%20Performed%20Validation%20and%20Uploaded%20Verdict%20.png)
-+ OEM receiving T1's verdict
++ OEM receiving Tier1's verdict
 ![Screen Shot](https://github.com/CISCO-METZ-GROUP/VIBES-ui/blob/master/screenshots/OEM%20Received%20Verdict%20from%20T1.png)
 
 ## Prerequisities
