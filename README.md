@@ -45,4 +45,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## License
 
-Apache 2.0
+Apache License 2.0
